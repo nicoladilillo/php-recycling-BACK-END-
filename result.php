@@ -1,13 +1,15 @@
 <?php $title = 'Result'; require('./partials/head.php'); ?>
 
-<p>
-  Devi riciclare: <b><?php echo($_GET['object']); ?></b>
-</p>
-
-<form action="/email.php" method="POST">
-  Inserisci la tua email
-  <input type="text" name="email">
-  <input type="submit" value="Submit">
-</form>
+<div class="response-page plastic">
+  <div id="response">
+    <figure>
+      <img src="/assets/images/bin-plastic.png" alt="Ricicla come plastica">
+    </figure>
+    <article>
+      <h4>Ricicla come</h4>
+      <h2>Plastica</h2>
+    </article>
+  </div>
+</div>
 
 <?php require('./partials/tail.php'); ?>
