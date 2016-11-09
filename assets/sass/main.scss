@@ -3,8 +3,14 @@
  * Copyright (c) 2016 PugliaSOS
  */
 
+// Base Package
+// ==========================================================================
+
 // Provides a modern and reliable CSS reset
 @import "partials/_normalize";
+
+// Provides utility functions for use flexbox
+@import "partials/_flexbox";
 
 // Set typography for the whole website
 @import "partials/_typography";
