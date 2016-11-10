@@ -8,7 +8,15 @@
   search_bar.addEventListener("submit", function (e) {
     if (input.value === "") {
       e.preventDefault();
-    	// Code for the warning pop-up
+      input.className = "warning";
     }
   });
+
+  // Remove the effect when user types into the search bar
+  input.addEventListener("input", function() {
+    if (input.className == "warning") {
+      input.className = "";
+    }
+  });
+
 })();
