@@ -1,14 +1,13 @@
 <?php $title = 'DoveLoButto'; require('./partials/head.php'); ?>
 
-<p>CSS is <b id="not">not</b> working</p>
-<p>JS is <b id="js-not">not</b> working</p>
-
-<hr>
-
-<form action="/result.php" method="GET">
-  Oggetto da riciclare
-  <input type="text" name="object">
-  <input type="submit" value="Submit">
-</form>
+<div class="action-box">
+  <article>
+    <p>Riciclare non è mai stato così facile..</p>
+  </article>
+  <form action="/result.php" method="get" class="search-bar">
+    <input type="text" name="object" placeholder="Ricicla ora">
+    <input type="image" src="/assets/images/action-icon.svg" alt="Ricicla">
+  </form>
+</div>
 
 <?php require('./partials/tail.php'); ?>

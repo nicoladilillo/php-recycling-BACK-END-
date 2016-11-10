@@ -15,10 +15,18 @@
 // Set typography for the whole website
 @import "partials/_typography";
 
+// Set basic style for search bars around the website
+@import "partials/_search_bar";
+
 // Animations
 // ==========================================================================
 
 @import "partials/animations/_popup";
+
+// Homepage
+// ==========================================================================
+
+@import "partials/_action_box";
 
 // Response's pages
 // ==========================================================================

@@ -39,11 +39,6 @@
     }
   }
 
-  // Provides a search bar directly from the navbar
-  form {
-
-  }
-
   @media only screen and (max-width: 767px) {
     @include flex('flex-wrap', 'wrap');
   }
