@@ -1,5 +1,5 @@
 .search-bar {
-  width: 40%;
+  width: 50%;
 
   @include flexbox;
   @include flex('flex-direction', 'row');
@@ -9,6 +9,10 @@
        -moz-box-sizing: border-box;
             box-sizing: border-box;
     padding: 5px 10px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    width: 90%;
   }
 
   input[type='text'] {

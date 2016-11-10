@@ -1,5 +1,5 @@
-.action-box {
-  width: 100%;
+.sidebar {
+  width: 420px;
   min-height: 100%;
 
   @include flexbox;
@@ -12,14 +12,11 @@
           box-sizing: border-box;
   padding: 15px;
 
-  background: #222 url('/assets/images/background.jpg') fixed center;
-  background-size: cover;
+  background-color: #222;
+  color: #ccc;
 
-  article {
-    color: #fff;
-    font-size: 1.5em;
-    font-style: italic;
-
-    text-align: center;
+  // I need to see for better ideas
+  @media only screen and (max-width: 992px) {
+    display: none;
   }
 }

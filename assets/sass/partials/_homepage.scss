@@ -1,0 +1,17 @@
+.homepage {
+  width: 100%;
+  min-height: 100%;
+
+  @include flexbox;
+  @include flex('flex-direction', 'row');
+
+  .navbar {
+    color: #d7d7d7;
+    font-family: inherit;
+  }
+
+  @media only screen and (max-width: 992px) {
+    height: 100%;
+    @include flex('flex-direction', 'column');
+  }
+}
