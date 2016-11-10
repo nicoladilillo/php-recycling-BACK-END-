@@ -3,7 +3,7 @@
 <div class="response-page plastic">
   <div class="navbar">
     <header>
-      <a href="/">
+      <a href="/" class="is-centered">
         <img src="/assets/images/logo.svg" alt="DoveLoButto">
         <span>DoveLoButto</span>
       </a>
