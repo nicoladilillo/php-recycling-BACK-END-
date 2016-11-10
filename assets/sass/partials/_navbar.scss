@@ -4,7 +4,6 @@
   @include flexbox;
   @include flex('flex-direction', 'row');
 
-  // Remove as soon as possible
   position: absolute;
   top: 0;
 
