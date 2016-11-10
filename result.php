@@ -8,9 +8,9 @@
         <span>DoveLoButto</span>
       </a>
     </header>
-    <form action="/result.php" method="get">
-      <input type="text" name="object">
-      <input type="submit" value="Submit">
+    <form action="/result.php" method="get" class="search-bar">
+      <input type="text" name="object" placeholder="Ricicla ora..">
+      <input type="image" src="/assets/images/action-icon.svg" alt="Ricicla">
     </form>
   </div>
 
