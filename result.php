@@ -20,7 +20,7 @@
     </figure>
     <article>
       <h4>Ricicla come</h4>
-      <h2>Plastica</h2>
+      <h2>PLASTICA</h2>
     </article>
   </div>
 </div>
