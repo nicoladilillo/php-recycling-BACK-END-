@@ -1,11 +1,14 @@
 (function() {
   'use strict';
+  
+  // Control for empty input in the search bar.
+  var search_bar = document.querySelector(".search-bar");
+  var input = document.querySelector(".search-bar input[type='text']");
 
-  // Example code
-  var not = document.getElementById('js-not')
-  if (not) {
-    not.remove();
-  }
-  ///////////////
-
+  search_bar.addEventListener("submit", function (e) {
+    if (input.value === "") {
+      e.preventDefault();
+    	// Code for the warning pop-up
+    }
+  });
 })();
