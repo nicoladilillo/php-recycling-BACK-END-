@@ -7,16 +7,16 @@
 // ==========================================================================
 
 // Provides a modern and reliable CSS reset
-@import "partials/_normalize";
+@import "partials/base/_normalize";
 
 // Provides utility functions for use flexbox
-@import "partials/_flexbox";
+@import "partials/base/_flexbox";
 
 // Set typography for the whole website
-@import "partials/_typography";
+@import "partials/base/_typography";
 
 // Set basic style for search bars around the website
-@import "partials/_search_bar";
+@import "partials/base/_search_bar";
 
 // Animations
 // ==========================================================================
