@@ -2,12 +2,7 @@
 
 <div class="homepage">
   <div class="navbar">
-    <header>
-      <a>
-        <img src="/assets/images/logo.svg" alt="DoveLoButto">
-        <span>DoveLoButto</span>
-      </a>
-    </header>
+    <?php require('./partials/header.php'); ?>
   </div>
 
   <div class="sidebar is-serif">

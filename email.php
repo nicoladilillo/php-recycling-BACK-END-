@@ -2,12 +2,7 @@
 
 <div class="email-page">
   <div class="navbar">
-    <header>
-      <a href="/" class="is-centered">
-        <img src="/assets/images/logo.svg" alt="DoveLoButto">
-        <span>DoveLoButto</span>
-      </a>
-    </header>
+    <?php require('./partials/header.php'); ?>
     <form action="/result.php" method="get" class="search-bar">
       <input type="text" name="object" placeholder="Ricicla ora..">
       <input type="image" src="/assets/images/action-icon.svg" alt="Ricicla">
