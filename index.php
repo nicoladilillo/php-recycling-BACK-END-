@@ -55,7 +55,7 @@
   <div class="response-page email" style="display:none;">
     <div id="response" class="lets-move pop-up-2s">
       <article>
-        <h4>Inserisci la tua email e ti diremo come riciclare </h4>
+        <h4></h4>
         <form action=".">
           <input type="email" name="email" placeholder="e-mail">
         </form>

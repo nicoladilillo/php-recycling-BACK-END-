@@ -33,10 +33,11 @@
         if(data.image != "no"){
           $(".homepage").hide();
           $(".email").hide();
+          $(".bin").hide();
           $("#resultForm").remove();
           $(".result").show();
-          $(".bin").show();
           $(".result").css("height", "100%");
+          $(".bin").show(2);
           $(".bin").attr("class", "response-page bin " + data.image);
           $(".icon").attr("src","/assets/images/bin-" + data.image + ".png");
           $("h2").html(data.text);
@@ -44,10 +45,13 @@
         else {
           $(".homepage").hide();
           $(".bin").hide();
+          $(".email").hide();
           $("#resultForm").remove();
           $(".result").show();
-          $(".email").show();
-          $("h4").append("<strong>" + data.text + "</strong>");
+          $(".result").css("height", "100%");
+          $(".email").show(2);
+          $(".email h4").html("Inserisci la tua email e ti diremo come riciclare <strong>"
+                       + data.text + "</strong>");
         }
        },
        /*error: function(data) {
