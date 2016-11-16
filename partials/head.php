@@ -10,6 +10,5 @@
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="icon" href="/assets/images/recycle.png">
 
-  <script type="text/javascript" src="/assets/js/app.js" async></script>
 </head>
 <body>
