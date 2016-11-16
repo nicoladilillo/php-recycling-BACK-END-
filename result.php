@@ -35,6 +35,9 @@
     echo json_encode($data);
   }
   else {
-    echo "no";
+    $data = [
+      'text' => "$object",
+      'image' => "no",
+    ];
+    echo json_encode($data);
   }
-?>

@@ -23,9 +23,9 @@
       <article>
         <p>Riciclare non è mai stato così facile..</p>
       </article>
-      <form action="result.php" method="GET" class="search-bar" id="resultForm">
+      <form action="result.php" method="GET" class="search-bar indexForm" id="resultForm">
         <input type="text" name="object" placeholder="Ricicla ora">
-        <input type="submit" src="/assets/images/action-icon.svg" alt="Ricicla">
+        <input type="submit" src="/assets/images/action-icon.svg" alt="Ricicla" >
       </form>
     </div>
 </div>
@@ -34,13 +34,13 @@
 
   <div class="navbar">
     <?php require('./partials/header.php'); ?>
-    <form action="/result.php" method="get" class="search-bar">
-      <input type="text" name="object" placeholder="Ricicla ora..">
-      <input type="image" src="/assets/images/action-icon.svg" alt="Ricicla">
+    <form action="result.php" method="GET" class="search-bar indexForm" >
+      <input type="text" name="object" placeholder="Ricicla ora">
+      <input type="submit" src="/assets/images/action-icon.svg" alt="Ricicla" >
     </form>
   </div>
 
-  <div class="response-page">
+  <div class="response-page bin" style="display:none;">
     <div id="response" class="lets-move pop-up-2s">
       <figure>
         <img alt="Ricicla come plastica" class="icon">
@@ -51,28 +51,17 @@
       </article>
     </div>
   </div>
-</div>
 
-<div class="email" style="display:none;">
-
-  <div class="navbar">
-    <?php require('./partials/header.php'); ?>
-    <form action="/result.php" method="get" class="search-bar">
-      <input type="text" name="object" placeholder="Ricicla ora..">
-      <input type="image" src="/assets/images/action-icon.svg" alt="Ricicla">
-    </form>
-  </div>
-
-  <div class="response-page">
+  <div class="response-page email" style="display:none;">
     <div id="response" class="lets-move pop-up-2s">
-      <form action=".">
-        <article>
+      <article>
+        <h4>Inserisci la tua email e ti diremo come riciclare </h4>
+        <form action=".">
           <input type="email" name="email" placeholder="e-mail">
-        </article>
-      </form>
+        </form>
+      </article>
     </div>
   </div>
-</div>
 
 </div>
 
