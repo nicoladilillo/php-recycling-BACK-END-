@@ -53,4 +53,27 @@
   </div>
 </div>
 
+<div class="email" style="display:none;">
+
+  <div class="navbar">
+    <?php require('./partials/header.php'); ?>
+    <form action="/result.php" method="get" class="search-bar">
+      <input type="text" name="object" placeholder="Ricicla ora..">
+      <input type="image" src="/assets/images/action-icon.svg" alt="Ricicla">
+    </form>
+  </div>
+
+  <div class="response-page">
+    <div id="response" class="lets-move pop-up-2s">
+      <form action=".">
+        <article>
+          <input type="email" name="email" placeholder="e-mail">
+        </article>
+      </form>
+    </div>
+  </div>
+</div>
+
+</div>
+
 <?php require('./partials/tail.php'); ?>

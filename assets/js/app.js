@@ -33,15 +33,18 @@
         success: function(data)
          {
            $(".homepage").hide();
-           if(data != "no")
+           if(data != "no") {
               $(".result").show();
               $(".result").css("height", "100%");
               $(".response-page").attr("class", "response-page " + data.image);
               $(".icon").attr("src","/assets/images/bin-" + data.image + ".png");
               $("h2").html(data.text);
+            }
          },
          error: function() {
            console.log("errore");
+           $(".homepage").hide();
+           $(".email").show();
          }
       });//close ajax()
 
