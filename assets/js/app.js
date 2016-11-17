@@ -30,37 +30,30 @@
       url: $(this).attr("action"),
       data: $(this).serialize(),
       success: function(data) {
+        $(".autocomplete").empty();
+        $(".homepage").hide();
+        $(".email").hide();
+        $(".bin").hide();
+        $("#resultForm").remove();
+        $(".result").show();
+        $(".result").css("height", "100%");
         if(data.image != "no"){
-          $(".autocomplete").empty();
-          $(".homepage").hide();
-          $(".email").hide();
-          $(".bin").hide();
-          $("#resultForm").remove();
-          $(".result").show();
-          $(".result").css("height", "100%");
           $(".bin").show(2);
           $(".bin").attr("class", "response-page bin " + data.image);
           $(".icon").attr("src","/assets/images/bin-" + data.image + ".png");
           $("h2").html(data.text);
         }
         else {
-          $(".autocomplete").empty();
-          $(".homepage").hide();
-          $(".bin").hide();
-          $(".email").hide();
-          $("#resultForm").remove();
-          $(".result").show();
-          $(".result").css("height", "100%");
           $(".email").show(2);
           $(".email h4").html("Inserisci la tua email e ti diremo come riciclare <strong>"
                        + data.text + "</strong>");
         }
       }
-    });//close ajax()
-  });//close submit event
+    });//Close ajax()
+  });//Close submit event
 
 
-  //autocomplete
+  //Autocomplete
   $(".indexForm").keydown(function(event) {
 
     $.ajax({
@@ -74,18 +67,18 @@
         for ( data in data ) {
            if( data.indexOf(string) == 0 )
             $(".autocomplete").append("<li style='height: 40px'>" + data + "</li>");
-            //console.log(string + " in " + data + " = " + data.indexOf(string));
         }
 
+        //Select from autocomplete
         $("li").on("click", function(event) {
 
-          //window.alert('clicked');
-          $(".textInput").val($(this).html())
+          $(".textInput").val($(this).html());
+          $(".autocomplete").empty()
 
         });
       }
-    });//close ajax()
+    });//Close ajax()
 
-  });//close keypress event
+  });//Close keypress event
 
-})( jQuery );//close
+})( jQuery );//Close all

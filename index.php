@@ -27,7 +27,7 @@
         <input type="text" name="object" placeholder="Ricicla ora" class="textInput">
         <input type="submit" src="/assets/images/action-icon.svg" alt="Ricicla" >
       </form>
-      <ul class="autocomplete" style="background-color: white; width: 46%; margin: 0px; height: 12%; list-style-type: none;">
+      <ul class="autocomplete" style="background-color: white; width: 46%; margin: 0px; list-style-type: none;">
       </ul>
     </div>
 </div>
