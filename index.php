@@ -27,6 +27,8 @@
         <input type="text" name="object" placeholder="Ricicla ora">
         <input type="submit" src="/assets/images/action-icon.svg" alt="Ricicla" >
       </form>
+      <ul class="autocomplete">
+      </ul>
     </div>
 </div>
 
@@ -38,6 +40,8 @@
       <input type="text" name="object" placeholder="Ricicla ora">
       <input type="submit" src="/assets/images/action-icon.svg" alt="Ricicla" >
     </form>
+    <ul class="autocomplete">
+    </ul>
   </div>
 
   <div class="response-page bin" style="display:none;">

@@ -31,6 +31,7 @@
       data: $(this).serialize(),
       success: function(data) {
         if(data.image != "no"){
+          $(".autocomplete").empty();
           $(".homepage").hide();
           $(".email").hide();
           $(".bin").hide();
@@ -43,6 +44,7 @@
           $("h2").html(data.text);
         }
         else {
+          $(".autocomplete").empty();
           $(".homepage").hide();
           $(".bin").hide();
           $(".email").hide();
@@ -53,18 +55,30 @@
           $(".email h4").html("Inserisci la tua email e ti diremo come riciclare <strong>"
                        + data.text + "</strong>");
         }
-       },
-       /*error: function(data) {
-        console.log("errore");
-        $(".homepage").hide();
-        $(".bin").hide();
-        $("#resultForm").remove();
-        $(".result").show();
-        $(".email").show();
-        $("h2").html(data.object);
-      }*/
+      }
+    });//close ajax()
+  });//close submit event
+
+
+  //autocomplete
+  $(".indexForm").keydown(function(event){
+
+    $.ajax({
+      dataType: "json",
+      type: "GET",
+      url: "autocomplete.php",
+      data: $(this).serialize(),
+      success: function(data) {
+        $(".autocomplete").empty();
+        var string = $(".indexForm input").val();
+        for ( data in data ) {
+           if( data.indexOf(string) == 0 )
+            $(".autocomplete").append("<li>" + data + "</li>");
+            //console.log(string + " in " + data + " = " + data.indexOf(string));
+        }
+      }
     });//close ajax()
 
-  });//close submit event
+  });//close keypress event
 
 })( jQuery );//close
