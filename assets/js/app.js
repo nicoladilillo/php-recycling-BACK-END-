@@ -19,7 +19,7 @@
     }
   });
 
-  $(".indexForm").submit(function(event){
+  $(".indexForm").submit(function(event) {
 
     // Stop form from submitting normally
     event.preventDefault();
@@ -61,7 +61,7 @@
 
 
   //autocomplete
-  $(".indexForm").keydown(function(event){
+  $(".indexForm").keydown(function(event) {
 
     $.ajax({
       dataType: "json",
@@ -73,9 +73,16 @@
         var string = $(".indexForm input").val();
         for ( data in data ) {
            if( data.indexOf(string) == 0 )
-            $(".autocomplete").append("<li>" + data + "</li>");
+            $(".autocomplete").append("<li style='height: 40px'>" + data + "</li>");
             //console.log(string + " in " + data + " = " + data.indexOf(string));
         }
+
+        $("li").on("click", function(event) {
+
+          //window.alert('clicked');
+          $(".textInput").val($(this).html())
+
+        });
       }
     });//close ajax()
 

@@ -24,10 +24,10 @@
         <p>Riciclare non è mai stato così facile..</p>
       </article>
       <form action="result.php" method="GET" class="search-bar indexForm" id="resultForm">
-        <input type="text" name="object" placeholder="Ricicla ora">
+        <input type="text" name="object" placeholder="Ricicla ora" class="textInput">
         <input type="submit" src="/assets/images/action-icon.svg" alt="Ricicla" >
       </form>
-      <ul class="autocomplete">
+      <ul class="autocomplete" style="background-color: white; width: 46%; margin: 0px; height: 12%; list-style-type: none;">
       </ul>
     </div>
 </div>
@@ -37,10 +37,10 @@
   <div class="navbar">
     <?php require('./partials/header.php'); ?>
     <form action="result.php" method="GET" class="search-bar indexForm" >
-      <input type="text" name="object" placeholder="Ricicla ora">
+      <input type="text" name="object" placeholder="Ricicla ora" class="textInput">
       <input type="submit" src="/assets/images/action-icon.svg" alt="Ricicla" >
     </form>
-    <ul class="autocomplete">
+    <ul class="autocomplete" style="background-color: white; width: 46%; margin: 0px; height: 12%; list-style-type: none;">
     </ul>
   </div>
 
